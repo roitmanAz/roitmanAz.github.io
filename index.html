@@ -60,23 +60,23 @@ h1 .hl path{stroke:var(--c);stroke-width:6;fill:none;stroke-linecap:round;stroke
 .build{position:relative;aspect-ratio:1/1;max-width:520px;margin-inline-start:auto;width:100%}
 .win{position:absolute;inset:6% 0 10% 8%;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 40px 80px -40px rgba(11,27,51,.45);overflow:hidden;display:flex;flex-direction:column}
 .win .bar{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line)}.win .bar i{width:10px;height:10px;border-radius:50%;background:#dbe3f0}
-.win .url{flex:1;margin-inline-start:10px;height:22px;border-radius:999px;background:#eef2f9;font-size:12px;color:var(--muted);display:flex;align-items:center;justify-content:center;direction:ltr}
+.win .url{flex:1;margin-inline-start:10px;height:22px;border-radius:999px;background:#eef2f9;font-size:12px;color:var(--muted);display:flex;align-items:center;justify-content:center}
 .win .body{padding:16px 16px 62px;display:flex;flex-direction:column;gap:12px;flex:1;position:relative;font-family:Assistant,sans-serif}
 .blk{opacity:0;transform:translateY(14px) scale(.97);animation:blk 10s infinite}
 @keyframes blk{0%,3%{opacity:0;transform:translateY(14px) scale(.97)}10%,90%{opacity:1;transform:none}97%,100%{opacity:0}}
 .m-nav{display:flex;align-items:center;justify-content:space-between}
 .m-logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--ink)}
-.m-logo i{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#f472b6,#a78bfa)}
+.m-logo i{width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#f97316,#facc15)}
 .m-menu{display:flex;gap:6px}.m-menu i{width:26px;height:6px;border-radius:6px;background:#e2e8f0}
-.m-hero{border-radius:16px;padding:18px;background:linear-gradient(120deg,#fdf2f8,#ede9fe);display:flex;flex-direction:column;gap:6px;animation-delay:.5s}
+.m-hero{border-radius:16px;padding:18px;background:linear-gradient(120deg,#fff7ed,#fef3c7);display:flex;flex-direction:column;gap:6px;animation-delay:.5s}
 .m-hero b{font-size:18px;color:var(--ink);line-height:1.2}.m-hero span{font-size:12px;color:var(--muted)}
 .m-btn{align-self:flex-start;margin-top:6px;padding:6px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:700}
 .m-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;flex:1;animation-delay:1s}
 .m-cards div{border-radius:12px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
 .m-cards div i{flex:1;min-height:40px}
-.m-cards div:nth-child(1) i{background:linear-gradient(135deg,#fbcfe8,#f9a8d4)}
-.m-cards div:nth-child(2) i{background:linear-gradient(135deg,#ddd6fe,#c4b5fd)}
-.m-cards div:nth-child(3) i{background:linear-gradient(135deg,#bae6fd,#a5f3fc)}
+.m-cards div:nth-child(1) i{background:linear-gradient(135deg,#fed7aa,#fdba74)}
+.m-cards div:nth-child(2) i{background:linear-gradient(135deg,#e2e8f0,#94a3b8)}
+.m-cards div:nth-child(3) i{background:linear-gradient(135deg,#bae6fd,#7dd3fc)}
 .m-cards div span{font-size:11px;font-weight:700;padding:6px 8px;color:var(--ink)}
 .m-chat{position:absolute;bottom:14px;inset-inline-start:14px;width:38px;height:38px;border-radius:50%;background:var(--p);color:#fff;display:grid;place-items:center;box-shadow:0 8px 18px -6px rgba(29,78,216,.6);animation-delay:1.5s}
 .m-chat .ico{width:18px;height:18px}
@@ -93,7 +93,7 @@ h1 .hl path{stroke:var(--c);stroke-width:6;fill:none;stroke-linecap:round;stroke
 /* Ticker */
 .ticker{overflow:hidden;border-block:1px solid var(--line);background:#fff}
 .track{display:flex;width:max-content;animation:tick 30s linear infinite;font-family:Rubik,sans-serif;font-weight:800;font-size:clamp(22px,3vw,34px);padding:16px 0;color:var(--ink)}
-.track span{padding:0 28px}.track span:nth-child(even){color:transparent;-webkit-text-stroke:1px var(--p)}
+.track span{padding:0 28px}.track span:nth-child(even){color:#9db4ef}
 @keyframes tick{to{transform:translateX(50%)}}
 section{padding:110px 0}
 h2{font-size:clamp(34px,5vw,60px);line-height:1.08;margin:0 0 14px}
@@ -102,11 +102,11 @@ h2{font-size:clamp(34px,5vw,60px);line-height:1.08;margin:0 0 14px}
 .stack{display:grid;gap:22px}
 .svc{position:sticky;top:110px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:30px;padding:36px;box-shadow:0 -20px 40px -30px rgba(11,27,51,.3)}
 .svc:nth-child(2){top:130px}.svc:nth-child(3){top:150px}
-.svc .n{font-family:Rubik,sans-serif;font-weight:800;font-size:72px;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--p)}
+.svc .n{font-family:Rubik,sans-serif;font-weight:800;font-size:72px;line-height:1;color:#c7d6fb}
 .svc h3{font-size:clamp(26px,3vw,36px);margin:0 0 6px}.svc p{margin:0;color:var(--muted);font-size:18px;max-width:560px}
 .svc ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .svc li{background:var(--soft);color:var(--p);font-weight:700;padding:6px 14px;border-radius:999px;font-size:15px;white-space:nowrap}
-.svc.ai{background:var(--ink);color:#fff;border-color:transparent}.svc.ai p{color:#b6c2d9}.svc.ai .n{-webkit-text-stroke-color:#67e8f9}.svc.ai li{background:rgba(103,232,249,.12);color:#67e8f9}
+.svc.ai{background:var(--ink);color:#fff;border-color:transparent}.svc.ai p{color:#b6c2d9}.svc.ai .n{color:#1f3b63}.svc.ai li{background:rgba(103,232,249,.12);color:#67e8f9}
 /* Why */
 .why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .why div{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;transition:transform .3s,border-color .3s}
@@ -178,12 +178,12 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:rgba(255,255,
     </div>
   </div>
   <div class="build" aria-hidden="true">
-    <div class="win"><div class="bar"><i></i><i></i><i></i><span class="url">studio-noa.co.il</span></div>
-      <div class="body"><div class="blk m-nav"><span class="m-logo"><i></i>סטודיו נועה</span><span class="m-menu"><i></i><i></i><i></i></span></div><div class="blk m-hero"><b>טיפולי פנים ויופי</b><span>תל אביב · א׳–ה׳ 9:00–19:00</span><span class="m-btn">לקביעת תור</span></div><div class="blk m-cards"><div><i></i><span>טיפול פנים</span></div><div><i></i><span>איפור</span></div><div><i></i><span>גבות</span></div></div><div class="blk m-chat"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div></div>
+    <div class="win"><div class="bar"><i></i><i></i><i></i><span class="url">האתר של העסק שלך</span></div>
+      <div class="body"><div class="blk m-nav"><span class="m-logo"><i></i>המוסך השכונתי</span><span class="m-menu"><i></i><i></i><i></i></span></div><div class="blk m-hero"><b>טיפול לרכב, בלי לחכות בתור</b><span>א׳–ה׳ 7:30–17:00 · שישי עד 13:00</span><span class="m-btn">לקביעת תור</span></div><div class="blk m-cards"><div><i></i><span>טיפול שנתי</span></div><div><i></i><span>צמיגים</span></div><div><i></i><span>מיזוג אוויר</span></div></div><div class="blk m-chat"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div></div>
     </div>
-    <div class="float f1"><span class="av">מ</span><span><small>מיכל · בצ׳אט באתר · 23:40</small><b>יש תור פנוי מחר בבוקר?</b></span></div>
-    <div class="float f3"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 17h6"/></svg></span><span><small>הבוט של העסק</small><b>כן! קבעתי לך ל-11:00 ✓</b></span></div>
-    <div class="float f2"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span><span><small>התראה אליך</small><b>תור חדש: מיכל, מחר 11:00</b></span></div>
+    <div class="float f1"><span class="av">מ</span><span><small>מיכל · בצ׳אט באתר · 23:40</small><b>אפשר להביא את האוטו מחר בבוקר?</b></span></div>
+    <div class="float f3"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 17h6"/></svg></span><span><small>הבוט של העסק</small><b>כן! קבעתי לך ל-8:30 ✓</b></span></div>
+    <div class="float f2"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span><span><small>התראה אליך</small><b>תור חדש: מיכל, מחר 8:30</b></span></div>
   </div>
 </div></header>
 
