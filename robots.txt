@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://roitmanaz.github.io/sitemap.xml
