@@ -60,30 +60,36 @@ h1 .hl path{stroke:var(--c);stroke-width:6;fill:none;stroke-linecap:round;stroke
 .build{position:relative;aspect-ratio:1/1;max-width:520px;margin-inline-start:auto;width:100%}
 .win{position:absolute;inset:6% 0 10% 8%;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 40px 80px -40px rgba(11,27,51,.45);overflow:hidden;display:flex;flex-direction:column}
 .win .bar{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line)}.win .bar i{width:10px;height:10px;border-radius:50%;background:#dbe3f0}
-.win .body{padding:18px;display:flex;flex-direction:column;gap:12px;flex:1;position:relative}
 .win .url{flex:1;margin-inline-start:10px;height:22px;border-radius:999px;background:#eef2f9;font-size:12px;color:var(--muted);display:flex;align-items:center;justify-content:center;direction:ltr}
-.win .real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top right;opacity:0;animation:real 9s infinite}
-@keyframes real{0%,26%{opacity:0;transform:scale(1.03)}34%,88%{opacity:1;transform:none}96%,100%{opacity:0}}
-.blk{border-radius:12px;background:var(--soft);opacity:0;transform:translateY(14px) scale(.97);animation:blk 9s infinite}
-.b1{height:16px;width:45%;background:#c7d6fb}
-.b2{height:28%;background:linear-gradient(120deg,#1d4ed8,#0891b2);animation-delay:.5s}
-.b3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;flex:1;background:none;animation-delay:1s}
-.b3 span{border-radius:12px;background:var(--soft);border:1px dashed #b9c9ef}
-.b4{height:38px;width:42%;align-self:flex-start;border-radius:999px;background:var(--p);animation-delay:1.5s}
-@keyframes blk{0%,4%{opacity:0;transform:translateY(14px) scale(.97)}12%,88%{opacity:1;transform:none}96%,100%{opacity:0}}
-.float{position:absolute;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 16px;box-shadow:0 20px 40px -20px rgba(11,27,51,.35);font-weight:700;font-size:15px;opacity:0;animation:pop 9s infinite}
-.f1{top:0;inset-inline-end:-2%;animation-delay:2.2s}
-.f2{bottom:2%;inset-inline-start:0;animation-delay:2.9s}
-.f2 small{display:block;color:var(--muted);font-weight:600;font-size:13px}
+.win .body{padding:16px 16px 62px;display:flex;flex-direction:column;gap:12px;flex:1;position:relative;font-family:Assistant,sans-serif}
+.blk{opacity:0;transform:translateY(14px) scale(.97);animation:blk 10s infinite}
+@keyframes blk{0%,3%{opacity:0;transform:translateY(14px) scale(.97)}10%,90%{opacity:1;transform:none}97%,100%{opacity:0}}
+.m-nav{display:flex;align-items:center;justify-content:space-between}
+.m-logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--ink)}
+.m-logo i{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#f472b6,#a78bfa)}
+.m-menu{display:flex;gap:6px}.m-menu i{width:26px;height:6px;border-radius:6px;background:#e2e8f0}
+.m-hero{border-radius:16px;padding:18px;background:linear-gradient(120deg,#fdf2f8,#ede9fe);display:flex;flex-direction:column;gap:6px;animation-delay:.5s}
+.m-hero b{font-size:18px;color:var(--ink);line-height:1.2}.m-hero span{font-size:12px;color:var(--muted)}
+.m-btn{align-self:flex-start;margin-top:6px;padding:6px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:700}
+.m-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;flex:1;animation-delay:1s}
+.m-cards div{border-radius:12px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.m-cards div i{flex:1;min-height:40px}
+.m-cards div:nth-child(1) i{background:linear-gradient(135deg,#fbcfe8,#f9a8d4)}
+.m-cards div:nth-child(2) i{background:linear-gradient(135deg,#ddd6fe,#c4b5fd)}
+.m-cards div:nth-child(3) i{background:linear-gradient(135deg,#bae6fd,#a5f3fc)}
+.m-cards div span{font-size:11px;font-weight:700;padding:6px 8px;color:var(--ink)}
+.m-chat{position:absolute;bottom:14px;inset-inline-start:14px;width:38px;height:38px;border-radius:50%;background:var(--p);color:#fff;display:grid;place-items:center;box-shadow:0 8px 18px -6px rgba(29,78,216,.6);animation-delay:1.5s}
+.m-chat .ico{width:18px;height:18px}
+.float{position:absolute;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px 14px;box-shadow:0 20px 40px -20px rgba(11,27,51,.35);font-weight:700;font-size:14px;opacity:0;animation:pop 10s infinite;max-width:260px}
+.float small{display:block;color:var(--muted);font-weight:600;font-size:12px}
+.float b{display:block;font-size:14px;line-height:1.35}
 .float .fi{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:var(--soft);color:var(--p);flex-shrink:0}
 .float .fi .ico{width:17px;height:17px}
-.f3 .fi{background:rgba(255,255,255,.12);color:#86efac}
-.f2 .fi{background:#dcfce7;color:#16a34a}
-.f2 b{display:block;font-size:15px}
-.f3{top:42%;inset-inline-end:-6%;animation-delay:3.6s;background:var(--ink);color:#fff}
-@keyframes pop{0%{opacity:0;transform:translateY(10px) scale(.9)}6%,82%{opacity:1;transform:none}92%,100%{opacity:0}}
-.cursor{position:absolute;width:22px;height:22px;top:30%;left:30%;animation:cur 9s infinite;z-index:3}
-@keyframes cur{0%{top:70%;left:70%}20%{top:28%;left:55%}40%{top:55%;left:35%}60%{top:80%;left:62%}80%,100%{top:70%;left:70%}}
+.av{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;background:linear-gradient(135deg,#f472b6,#a78bfa);color:#fff;font-weight:800;font-size:14px}
+.f1{top:2%;inset-inline-end:-4%;animation-delay:2.2s}
+.f3{top:40%;inset-inline-end:-8%;animation-delay:3.6s;background:var(--ink);color:#fff;border-color:transparent}.f3 small{color:#9fb0cc}.f3 .fi{background:rgba(255,255,255,.12);color:#67e8f9}
+.f2{bottom:0;inset-inline-start:2%;animation-delay:5s}.f2 .fi{background:#dcfce7;color:#16a34a}
+@keyframes pop{0%{opacity:0;transform:translateY(10px) scale(.92)}5%,80%{opacity:1;transform:none}90%,100%{opacity:0}}
 /* Ticker */
 .ticker{overflow:hidden;border-block:1px solid var(--line);background:#fff}
 .track{display:flex;width:max-content;animation:tick 30s linear infinite;font-family:Rubik,sans-serif;font-weight:800;font-size:clamp(22px,3vw,34px);padding:16px 0;color:var(--ink)}
@@ -107,15 +113,17 @@ h2{font-size:clamp(34px,5vw,60px);line-height:1.08;margin:0 0 14px}
 .why div:hover{transform:translateY(-6px);border-color:var(--p)}
 .why .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--soft);color:var(--p)}.why .ic .ico{width:22px;height:22px}.why b{display:block;font-size:20px;margin:8px 0 2px}.why p{margin:0;color:var(--muted);font-size:16px}
 /* Work */
-.work{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.proj{background:#fff;border:1px solid var(--line);border-radius:28px;padding:16px;transition:transform .4s}
-.proj .pic{border-radius:18px;overflow:hidden;position:relative}
-.proj img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top;transition:transform .6s}
-.proj:hover img{transform:scale(1.04)}
-.proj .txt{padding:20px 10px 8px}.proj h3{font-size:26px;margin:0 0 4px}.proj .kind{color:var(--p);font-weight:700;font-size:15px;margin:0 0 14px}
-.story{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:10px}
-.story li{display:grid;grid-template-columns:86px 1fr;gap:10px;align-items:baseline;padding-top:10px;border-top:1px solid var(--line)}
-.story b{font-size:14px;color:var(--ink)}.story span{color:var(--muted);font-size:16px}
+.work{display:grid;gap:70px}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.proj:nth-child(even) .pic{order:2}
+.proj .pic{border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 40px 70px -40px rgba(11,27,51,.45);transform:rotate(-1.2deg);transition:transform .5s}
+.proj:nth-child(even) .pic{transform:rotate(1.2deg)}
+.proj:hover .pic{transform:none}
+.proj img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top right}
+.proj .kind{display:inline-block;background:var(--soft);color:var(--p);font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.proj h3{font-size:clamp(28px,3vw,36px);margin:0 0 14px}
+.proj p{margin:0 0 12px;color:var(--muted);font-size:18px;line-height:1.75}
+.proj .res{margin:18px 0 18px;padding:14px 18px;border-inline-start:4px solid var(--c);background:#fff;border-radius:0 14px 14px 0;color:var(--ink);font-weight:700;font-size:18px}
 .tags{display:flex;gap:6px;flex-wrap:wrap}.tags span{font-size:14px;font-weight:700;padding:4px 12px;border-radius:999px;background:var(--soft);color:var(--p)}
 /* Process line that fills on scroll */
 .steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:30px}
@@ -146,8 +154,8 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:rgba(255,255,
 .dock{position:fixed;bottom:14px;inset-inline:14px;z-index:40;display:none;gap:10px}
 .dock a{flex:1;justify-content:center}
 .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}.reveal.in{opacity:1;transform:none}
-@media (max-width:960px){.hero,.work,.final{grid-template-columns:1fr}.build{margin:10px auto 0;max-width:440px}.why{grid-template-columns:1fr 1fr}.svc{grid-template-columns:1fr;position:relative;top:auto!important}.svc ul{flex-direction:row;flex-wrap:wrap}}
-@media (max-width:620px){footer{padding-bottom:100px}.fgrid{grid-template-columns:1fr}.dock{display:flex}nav .call span[dir]{display:none}nav .call{padding:6px}.why,.steps{grid-template-columns:1fr}.line{display:none}.final{padding:46px 24px}.svc{padding:26px}}
+@media (max-width:960px){.hero,.proj,.final{grid-template-columns:1fr}.proj:nth-child(even) .pic{order:0}.proj .pic,.proj:nth-child(even) .pic{transform:none}.build{margin:10px auto 0;max-width:440px}.why{grid-template-columns:1fr 1fr}.svc{grid-template-columns:1fr;position:relative;top:auto!important}.svc ul{flex-direction:row;flex-wrap:wrap}}
+@media (max-width:620px){.f1,.f3{inset-inline-end:0}.float{max-width:230px}footer{padding-bottom:100px}.fgrid{grid-template-columns:1fr}.dock{display:flex}nav .call span[dir]{display:none}nav .call{padding:6px}.why,.steps{grid-template-columns:1fr}.line{display:none}.final{padding:46px 24px}.svc{padding:26px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 .w,.blk,.float,.reveal{opacity:1;transform:none}h1 .hl path{stroke-dashoffset:0}}
 </style>
 </head>
@@ -170,13 +178,12 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:rgba(255,255,
     </div>
   </div>
   <div class="build" aria-hidden="true">
-    <div class="win"><div class="bar"><i></i><i></i><i></i><span class="url">yossitachover.com</span></div>
-      <div class="body"><div class="blk b1"></div><div class="blk b2"></div><div class="blk b3"><span></span><span></span><span></span></div><div class="blk b4"></div><img class="real" src="assets/yossi-desktop.jpg" alt=""></div>
+    <div class="win"><div class="bar"><i></i><i></i><i></i><span class="url">studio-noa.co.il</span></div>
+      <div class="body"><div class="blk m-nav"><span class="m-logo"><i></i>סטודיו נועה</span><span class="m-menu"><i></i><i></i><i></i></span></div><div class="blk m-hero"><b>טיפולי פנים ויופי</b><span>תל אביב · א׳–ה׳ 9:00–19:00</span><span class="m-btn">לקביעת תור</span></div><div class="blk m-cards"><div><i></i><span>טיפול פנים</span></div><div><i></i><span>איפור</span></div><div><i></i><span>גבות</span></div></div><div class="blk m-chat"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div></div>
     </div>
-    <div class="float f1"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 17h6"/></svg></span>הבוט ענה ללקוח · 23:40</div>
-    <div class="float f3"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M9 14l2 2 4-4"/></svg></span>תור נקבע ל-11:00</div>
-    <div class="float f2"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span><span><small>פנייה חדשה מהאתר</small><b>מבקשים הצעת מחיר</b></span></div>
-    <svg class="cursor" viewBox="0 0 24 24"><path d="M4 2l16 9-7 2-3 7z" fill="#0b1b33" stroke="#fff" stroke-width="1.5"/></svg>
+    <div class="float f1"><span class="av">מ</span><span><small>מיכל · בצ׳אט באתר · 23:40</small><b>יש תור פנוי מחר בבוקר?</b></span></div>
+    <div class="float f3"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 17h6"/></svg></span><span><small>הבוט של העסק</small><b>כן! קבעתי לך ל-11:00 ✓</b></span></div>
+    <div class="float f2"><span class="fi"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span><span><small>התראה אליך</small><b>תור חדש: מיכל, מחר 11:00</b></span></div>
   </div>
 </div></header>
 
@@ -206,12 +213,20 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:rgba(255,255,
 
 <section id="work" style="padding-top:20px"><div class="wrap">
   <h2 class="display reveal">עבודות</h2>
-  <p class="sub reveal">מה הייתה הבעיה, מה בניתי, ומה זה נתן.</p>
+  <p class="sub reveal">שני עסקים, שתי בעיות, ומה שבנינו כדי לפתור אותן.</p>
   <div class="work">
     <article class="proj reveal"><div class="pic"><img src="assets/yossi-desktop.jpg" alt="האתר של יוסי טכובר"></div>
-      <div class="txt"><h3>יוסי טכובר</h3><p class="kind">חנות אונליין ומערכת ניהול</p><ul class="story"><li><b>האתגר</b><span>מוזיקאי שמכר סטים למקלדות בהודעות, בלי חנות ובלי סדר.</span></li><li><b>מה בניתי</b><span>חנות עם נגן דוגמאות, עגלה ואזור אישי, ופאנל ניהול עם מיילים אוטומטיים.</span></li><li><b>התוצאה</b><span>לקוחות שומעים, בוחרים ומזמינים לבד. יוסי מנהל הכול ממקום אחד.</span></li></ul><div class="tags"><span>חנות אונליין</span><span>פאנל ניהול</span><span>מיילים אוטומטיים</span></div></div></article>
+      <div><span class="kind">חנות אונליין · מערכת ניהול</span><h3>יוסי טכובר</h3>
+        <p>יוסי הוא קלידן שמוכר סטים של מקצבים לאורגנים. עד עכשיו כל מכירה עברה בהודעות: לשלוח דוגמה, לחכות לתשובה, לשלוח קובץ.</p>
+        <p>בניתי לו חנות שבה הלקוח שומע דוגמאות, בוחר ושולח הזמנה בעצמו, ומערכת ניהול שבה יוסי מעלה סטים, עונה לפניות ורואה מה קורה באתר. המיילים יוצאים לבד.</p>
+        <div class="res">הלקוחות מגיעים מוכנים, ויוסי מנהל את הכול ממקום אחד.</div>
+        <div class="tags"><span>חנות אונליין</span><span>פאנל ניהול</span><span>מיילים אוטומטיים</span></div></div></article>
     <article class="proj reveal"><div class="pic"><img src="assets/kaliscore-desktop.jpg" alt="KaLiScore"></div>
-      <div class="txt"><h3>KaLiScore</h3><p class="kind">מערכת דירוג עם קריאת מסמכים</p><ul class="story"><li><b>האתגר</b><span>משכירים לא יודעים אם שוכר יוכל לשלם, ושוכרים צריכים להוכיח את עצמם שוב ושוב.</span></li><li><b>מה בניתי</b><span>מערכת שקוראת תלושי שכר ומחשבת ציון אמינות פיננסית.</span></li><li><b>התוצאה</b><span>ציון אחד שהשוכר משתף, והמסמכים לא נשמרים בשום מקום.</span></li></ul><div class="tags"><span>קריאת מסמכים</span><span>אלגוריתם דירוג</span><span>פרטיות</span></div></div></article>
+      <div><span class="kind">מערכת דירוג · קריאת מסמכים</span><h3>KaLiScore</h3>
+        <p>בשוק השכירות כולם חוששים: המשכיר לא יודע אם השוכר יוכל לשלם, והשוכר צריך להוכיח את עצמו שוב ושוב.</p>
+        <p>המערכת קוראת תלושי שכר ומחשבת ציון אמינות פיננסית אחד, שהשוכר משתף עם המשכיר. המסמכים עצמם לא נשמרים בשום מקום.</p>
+        <div class="res">במקום ערימת מסמכים, מספר אחד ששני הצדדים מבינים.</div>
+        <div class="tags"><span>קריאת מסמכים</span><span>אלגוריתם דירוג</span><span>פרטיות</span></div></div></article>
   </div>
 </div></section>
 
